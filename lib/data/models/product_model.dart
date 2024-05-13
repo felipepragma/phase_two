@@ -2,6 +2,17 @@ import 'dart:convert';
 import 'package:phase_two/data/models/model_base.dart';
 import 'package:phase_two/data/models/rating_model.dart';
 
+///
+/// [ProductModel] Product model to extends [ModelBase]
+/// 
+/// [id] : id product model
+/// [title] : id product model
+/// [price] : price product model
+/// [category] : category product model
+/// [description] : description product model
+/// [image] : image product model
+/// [rating] : rating product model use [RatingModel]
+/// 
 class ProductModel implements ModelBase<ProductModel> {
   final int? id;
   final String? title;

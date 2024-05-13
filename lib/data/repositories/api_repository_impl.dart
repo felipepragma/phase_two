@@ -6,6 +6,15 @@ import 'package:phase_two/data/datasource/api_error.dart';
 import 'package:phase_two/data/models/product_model.dart';
 import 'package:phase_two/data/repositories/api_repository_interface.dart';
 
+///
+/// [ApiRepositoryImplements] Implemnetation to Repository
+/// 
+/// [_dataSourceInterface] : Inject data source [ApiDatasourceInterface] to api call
+///
+/// [getAllProducts] : method for api call get all products
+/// [getProductById] : method for api call get product by id
+/// [getCategories] : method for api call get all categories
+/// 
 class ApiRepositoryImplements extends ApiRepositoryInterface {
 
   late ApiDatasourceInterface _dataSourceInterface;

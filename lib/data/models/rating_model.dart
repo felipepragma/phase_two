@@ -1,3 +1,9 @@
+///
+/// [RatingModel] Rating model
+/// 
+/// [rate] : rate product model
+/// [count] : count product model
+/// 
 class RatingModel {
     double rate;
     int count;

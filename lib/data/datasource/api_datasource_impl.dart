@@ -8,6 +8,15 @@ import 'package:phase_two/data/models/list_categories_model.dart';
 import 'package:phase_two/data/models/list_product_model.dart';
 import 'package:phase_two/data/models/product_model.dart';
 
+///
+/// [ApiDatasourceImplements] Implemnetation to DataSource
+/// 
+/// [_client] : Inject http client [http.Client] to api call
+///
+/// [getAllProducts] : method for api call get all products
+/// [getProductById] : method for api call get product by id
+/// [getCategories] : method for api call get all categories
+/// 
 class ApiDatasourceImplements extends ApiDatasourceInterface {
 
   final http.Client _client;

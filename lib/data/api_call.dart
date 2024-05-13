@@ -5,6 +5,15 @@ import 'package:phase_two/data/models/product_model.dart';
 import 'package:phase_two/data/repositories/api_repository_impl.dart';
 import 'package:phase_two/data/repositories/api_repository_interface.dart';
 
+///
+/// [ApiCall] API entry point
+/// 
+/// [ApiRepositoryInterface] : Repository api call
+///
+/// [getAllProducts] : method for api call get all products
+/// [getProductById] : method for api call get product by id
+/// [getCategories] : method for api call get all categories
+/// 
 class ApiCall {
 
   late ApiRepositoryInterface _apiRepository;
