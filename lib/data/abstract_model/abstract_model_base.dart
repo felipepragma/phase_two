@@ -1,10 +1,10 @@
 ///
-/// [ModelBase] abstract model base
+/// [AbstractModelBase] abstract model base
 /// 
 /// [fromJson] : method get instance fromJson
 /// [toJson] : method get string instance
 /// 
-abstract class ModelBase<T> {
+abstract class AbstractModelBase<T> {
   T fromJson(String str);
   String toJson();
 }

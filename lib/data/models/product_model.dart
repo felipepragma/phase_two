@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:phase_two/data/models/model_base.dart';
+import 'package:phase_two/data/abstract_model/abstract_model_base.dart';
 import 'package:phase_two/data/models/rating_model.dart';
 
 ///
@@ -13,7 +13,7 @@ import 'package:phase_two/data/models/rating_model.dart';
 /// [image] : image product model
 /// [rating] : rating product model use [RatingModel]
 /// 
-class ProductModel implements ModelBase<ProductModel> {
+class ProductModel implements AbstractModelBase<ProductModel> {
   final int? id;
   final String? title;
   final double? price;
