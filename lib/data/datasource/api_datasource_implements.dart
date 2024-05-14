@@ -5,7 +5,7 @@ import 'package:phase_two/data/datasource/api_error.dart';
 import 'package:phase_two/data/datasource/api_url_base.dart';
 import 'package:phase_two/data/datasource/either_api.dart';
 import 'package:phase_two/data/models/list_categories_model.dart';
-import 'package:phase_two/data/models/list_product_model.dart';
+import 'package:phase_two/data/models/list_products_model.dart';
 import 'package:phase_two/data/models/product_model.dart';
 
 ///
@@ -25,7 +25,7 @@ class ApiDatasourceImplements extends ApiDatasourceInterface {
   
   @override
   Future<Either<ApiError, List<ProductModel>>> getAllProducts() async {
-    final response = get(ApiUrlBase.getAllProducts, _client, (json) => productsModelFromMap(json));
+    final response = get(ApiUrlBase.getAllProducts, _client, (json) => LisProductsModel().productsModelFromMap(json));
     return response;
   }
 
@@ -37,7 +37,7 @@ class ApiDatasourceImplements extends ApiDatasourceInterface {
 
   @override
   Future<Either<ApiError, List<String>>> getCategories() {
-    final response = get(ApiUrlBase.getCategories, _client, (json) => categoriesModelFromMap(json));
+    final response = get(ApiUrlBase.getCategories, _client, (json) => ListCategoriesModel().categoriesModelFromMap(json));
     return response;
   }
 }

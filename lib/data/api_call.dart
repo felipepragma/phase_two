@@ -2,7 +2,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:phase_two/data/datasource/api_error.dart';
 import 'package:phase_two/data/models/product_model.dart';
-import 'package:phase_two/data/repositories/api_repository_impl.dart';
+import 'package:phase_two/data/repositories/api_repository_implements.dart';
 import 'package:phase_two/data/repositories/api_repository_interface.dart';
 
 ///
